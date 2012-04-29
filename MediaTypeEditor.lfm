@@ -1,0 +1,149 @@
+object FormMediaType: TFormMediaType
+  Left = 308
+  Height = 239
+  Top = 196
+  Width = 311
+  BorderStyle = bsToolWindow
+  Caption = ' MediaType Editor'
+  ClientHeight = 239
+  ClientWidth = 311
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '1.1'
+  object Label1: TLabel
+    Left = 8
+    Height = 14
+    Top = 8
+    Width = 54
+    Caption = 'Major Type'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 160
+    Height = 14
+    Top = 8
+    Width = 47
+    Caption = 'Sub Type'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 160
+    Height = 14
+    Top = 48
+    Width = 59
+    Caption = 'Sample Size'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 160
+    Height = 14
+    Top = 96
+    Width = 60
+    Caption = 'Format Type'
+    ParentColor = False
+  end
+  object lblFormatSize: TLabel
+    Left = 8
+    Height = 14
+    Top = 96
+    Width = 56
+    Caption = 'Format Size'
+    ParentColor = False
+  end
+  object btOK: TButton
+    Left = 8
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = '&OK'
+    OnClick = btOKClick
+    TabOrder = 0
+  end
+  object btCancel: TButton
+    Left = 232
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = '&Cancel'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object cbMajorTypes: TComboBox
+    Left = 8
+    Height = 21
+    Top = 24
+    Width = 145
+    ItemHeight = 13
+    OnChange = cbMajorTypesChange
+    Style = csDropDownList
+    TabOrder = 2
+  end
+  object cbSubTypes: TComboBox
+    Left = 160
+    Height = 21
+    Top = 24
+    Width = 145
+    ItemHeight = 13
+    OnChange = cbSubTypesChange
+    Style = csDropDownList
+    TabOrder = 3
+  end
+  object chkFixedSize: TCheckBox
+    Left = 8
+    Height = 17
+    Top = 56
+    Width = 109
+    Caption = 'Fixed Size Samples'
+    OnClick = chkFixedSizeClick
+    TabOrder = 4
+  end
+  object chkTempCompress: TCheckBox
+    Left = 8
+    Height = 17
+    Top = 72
+    Width = 125
+    Caption = 'Temporal Compression'
+    OnClick = chkTempCompressClick
+    TabOrder = 5
+  end
+  object edSampleSize: TEdit
+    Left = 160
+    Height = 21
+    Top = 64
+    Width = 145
+    OnChange = edSampleSizeChange
+    TabOrder = 6
+    Text = '0'
+  end
+  object cbFormatType: TComboBox
+    Left = 160
+    Height = 21
+    Top = 112
+    Width = 145
+    ItemHeight = 13
+    OnChange = cbFormatTypeChange
+    Style = csDropDownList
+    TabOrder = 7
+  end
+  object Memo1: TMemo
+    Left = 8
+    Height = 59
+    Top = 144
+    Width = 297
+    ReadOnly = True
+    TabOrder = 8
+  end
+  object edFormatSize: TEdit
+    Left = 8
+    Height = 21
+    Top = 112
+    Width = 145
+    Enabled = False
+    TabOrder = 9
+    Text = '0'
+  end
+end
